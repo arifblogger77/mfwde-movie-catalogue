@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 
-.app-bar .app-bar__brand__navigation.open {
+.app-bar .app-bar__navigation.open {
   left: 0;
 }
 

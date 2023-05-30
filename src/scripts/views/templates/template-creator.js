@@ -2,9 +2,9 @@ import CONFIG from '../../globals/config';
 
 const createMovieDetailTemplate = (movie) => `
   <h2 class="movie__title">${movie.title}</h2>
-  <img class="movie__poster" src="${CONFIG.BASE_IMAGE_URL + movie.poster_path}" alt="${movie.title}" />
+  <img class="movie__poster" src="${CONFIG.BASE_IMAGE_URL + movie.poster_path}" alt="${movie.title}">
   <div class="movie__info">
-    <h3>Information</h3>
+  <h3>Information</h3>
     <h4>Tagline</h4>
     <p>${movie.tagline}</p>
     <h4>Release Date</h4>
@@ -24,7 +24,7 @@ const createMovieItemTemplate = (movie) => `
   <div class="movie-item">
     <div class="movie-item__header">
       <img class="movie-item__header__poster" alt="${movie.title}"
-        src="${movie.backdrop_path ? CONFIG.BASE_IMAGE_URL + movie.backdrop_path : 'https://picsum.photos/id/666/800/450?grayscale'}">
+           src="${movie.backdrop_path ? CONFIG.BASE_IMAGE_URL + movie.backdrop_path : 'https://picsum.photos/id/666/800/450?grayscale'}">
       <div class="movie-item__header__rating">
         <p>⭐️<span class="movie-item__header__rating__score">${movie.vote_average}</span></p>
       </div>
@@ -37,13 +37,13 @@ const createMovieItemTemplate = (movie) => `
 `;
 
 const createLikeButtonTemplate = () => `
-  <button aria-label="like this movie" id="likebutton" class="like">
+  <button aria-label="like this movie" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likebutton" class="like">
+  <button aria-label="unlike this movie" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;

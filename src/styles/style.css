@@ -4,16 +4,16 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/**
- * AppBar
- */
+/*
+  AppBar
+*/
 
 .app-bar {
   padding: 8px 16px;
@@ -76,9 +76,9 @@ body {
   width: 100%;
 }
 
-/**
- * Main Content
- */
+/*
+  Main Content
+*/
 
 main {
   padding: 32px;
@@ -94,9 +94,10 @@ main {
   font-weight: normal;
 }
 
-/**
-  * Movies
-  */
+
+/*
+  Movies
+*/
 
 .movies {
   display: grid;
@@ -105,9 +106,9 @@ main {
   margin: 32px 0;
 }
 
-/**
- * Movie Item
- */
+/*
+  Movie Item
+*/
 
 .movie-item {
   width: 100%;
@@ -155,13 +156,13 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 4; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 
-/**
-  * Movie
-  */
+/*
+  Movie
+*/
 
 .movie {
   margin: 0 auto;
@@ -181,46 +182,16 @@ main {
   margin: 8px 0;
 }
 
-/**
- * Like
- */
 
-.like {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #db0000;
-
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  border-radius: 50%;
-  border: 0;
-
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-}
-
-/**
- * Footer
- */
+/*
+  Footer
+*/
 
 footer {
   padding: 16px;
 }
 
-footer #footerTools {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
-
 footer p {
-  margin-top: 8px;
   text-align: center;
   color: #aaaaaa;
 }
@@ -230,33 +201,23 @@ footer p a {
   text-decoration: none;
 }
 
-/**
- * Button
- */
+/*
+   Like
+*/
 
- .btn {
-  display: inline-block;
-  padding: 12px 24px;
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
   background-color: #db0000;
-  border: 1px solid #777777;
-  border-radius: 4px;
-
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
-
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
-  transition: .15s ease-in-out;
- }
-
- .btn:hover {
-  background-color: #db0000bb;
- }
-
- .btn:active {
-  background-color: #db0000dd;
- }
-
- .btn:focus-visible {
-  outline: 3px solid #db000055;
- }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

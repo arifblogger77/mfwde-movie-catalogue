@@ -7,7 +7,7 @@ class FavoriteMovieShowPresenter {
   }
 
   async _showFavoriteMovies() {
-    const movies = this._favoriteMovies.getAllMovies();
+    const movies = await this._favoriteMovies.getAllMovies();
     this._displayMovies(movies);
   }
 
